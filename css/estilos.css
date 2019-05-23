@@ -1,3 +1,121 @@
-nav div a:first-child {
-    padding-left: 10px; 
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", Arial, Sans-serif;
+	font-size: 16px;
+}
+
+
+
+@media screen and (min-width:980px) {
+    h1 span {
+        color: orangered;
+        font-weight: bold;
+    }
+
+    .contenedor {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+    }
+
+    h1 {
+        color: #fff;
+        border-bottom: 3px solid orangered;
+        font-weight: normal;
+        text-align: left;
+        display: inline-block;
+    }
+
+
+    header {
+        width: 100%;
+        background: url('../images/fondo.jpg') #281a0c;
+        background-size:cover;
+        background-attachment: fixed;
+        background-position: center 0;
+    }
+
+    header .contenedor {
+        position: relative;
+        height: 600px;
+    }
+
+    header .menu {
+        width: 100%;
+        text-align: right;
+    }
+
+    header .menu a {
+        color: #000;
+        font-size: 20px;
+        font-weight: 300;
+        display: inline-block;
+        margin: 40px 20px;
+        text-decoration: none;
+        position: relative;
+    }
+
+    #bt-cv{
+        color: orangered;
+    }
+
+    header .textos {
+        width: 100%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        margin-top:-52px;
+    }
+
+    header .textos .nombre {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    header .textos .nombre span {
+        font-weight: 300;
+    }
+
+    header .textos h3 {
+        font-weight: 300;
+        font-size: 25px;
+        font-style: italic;
+    }
+
+    main {
+        max-width: 980px;
+        margin: auto;
+    }
+
+    #fotografia {
+        margin: 300px 0;  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5px;
+    }
+
+    #fotografia img:nth-child(2) {
+        grid-column-start: 2;
+        grid-column-end: -1;
+    }
+    #fotografia img {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        width: 100%
+    }
+
+    #fotografia img:hover{
+        filter: none;
+        transition: all 3s;
+    }
 }
