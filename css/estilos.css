@@ -100,7 +100,8 @@ body {
         margin: 300px 0;  
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto-fill 1fr auto-fill 1fr;
+        grid-auto-rows: min-content;
         grid-gap: 5px;
     }
 
@@ -111,7 +112,7 @@ body {
     #fotografia img {
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
-        width: 100%
+        width: 100%;
     }
 
     #fotografia img:hover{
