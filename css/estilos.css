@@ -190,3 +190,46 @@ section:nth-child(4) img{
 #proyectos img {
     width: CALC(100%/3);
 }
+
+#fortalezas {
+    margin: 150px auto;
+}
+
+#fortalezas ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#fortalezas ul img{
+    width: 120px;
+}
+#fortalezas ul li {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#fortalezas ul li:nth-child(1) {
+    width: calc(100%/3);
+}
+
+#fortalezas ul li:nth-child(2) {
+    width: calc(100%/3);
+}
+
+#fortalezas ul li:nth-child(3) {
+    width: calc(100%/3);
+}
+
+#fortalezas ul li:nth-child(4) {
+    width: 35%;
+}
+#fortalezas ul li:nth-child(5) {
+    width: 35%;
+}
+
+
