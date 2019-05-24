@@ -63,8 +63,12 @@ header .menu a {
     position: relative;
 }
 
-#bt-cv{
+#bt-cv {
     color: orangered;
+}
+
+#bt-cv img , p {
+    display: inline-block
 }
 
 header .textos {
@@ -91,8 +95,12 @@ header .textos h3 {
 }
 
 main {
-    max-width: 980px;
     margin: auto;
+}
+
+section {
+    margin: auto;
+    max-width: 980px;
 }
 
 #fotografia div:nth-child(2){
@@ -161,10 +169,14 @@ main {
     text-align: center;
 }
 
-section:nth-child(4) img {
-    width: 100%;
-    height: 50%;
-    transform: rotate(90deg);
+section:nth-child(4) {
+    margin: 300px 0;
+    width: 100vw;
+}
+
+section:nth-child(4) img{
+    width: 100vw;
+    height: 500px;
 }
 
 #proyectos{
