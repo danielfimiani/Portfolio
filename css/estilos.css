@@ -34,12 +34,10 @@ h1 {
     margin-top:40px; 
 }
 
-
 header {
     width: 100%;
-    background: url('../images/fondo.jpg') #281a0c;
-    background-size:cover;
-    background-attachment: fixed;
+    background: url('../images/fondo.jpg') #fff no-repeat;
+    background-size: cover;
     background-position: center 0;
 }
 
@@ -71,27 +69,32 @@ header .menu a {
     display: inline-block
 }
 
-header .textos {
-    width: 100%;
-    color: #fff;
+.contenedor div {
     position: absolute;
-    top: 50%;
-    margin-top:-52px;
+    display: grid;
+    grid-template-areas: "imagen parrafo1"
+                        "imagen parrafo2" ;
+    padding-top: 150px;
+    margin: auto;
 }
 
-header .textos .nombre {
-    font-size: 50px;
-    font-weight: 600;
+.contenedor div p {
+    width: 80%;
+    color: white;
+    font-size: 60px;
 }
 
-header .textos .nombre span {
-    font-weight: 300;
+.contenedor div img{
+    grid-area: imagen;
+    width: 100%;
 }
 
-header .textos h3 {
-    font-weight: 300;
-    font-size: 25px;
-    font-style: italic;
+.contenedor div p:first-child {
+    grid-area: parrafo1;
+    width: 100%;
+}
+.contenedor div p:last-child{
+    grid-area: parrafo2
 }
 
 main {
@@ -107,7 +110,7 @@ section {
     margin: 150px 0;  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: auto-fill 1fr auto-fill 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-auto-rows: min-content;
     grid-gap: 5px;
 }
@@ -116,7 +119,7 @@ section {
     grid-column-start: 2;
     grid-column-end: -1;
 }
-#fotografia img {
+#fotografia div img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     width: 100%;
@@ -124,7 +127,7 @@ section {
 
 #fotografia img:hover{
     filter: none;
-    transition: all 3s;
+    transition: all .5s;
 }
 
 #fotografia h2 {
@@ -132,7 +135,7 @@ section {
 }
 
 #fotografia div:nth-child(3){
-    margin-bottom: 300px;
+    margin-bottom: 50px;
     filter: none;
     -webkit-box-shadow: 4px 7px 20px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 7px 20px -9px rgba(0,0,0,0.75);
@@ -142,6 +145,7 @@ section {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
 }
+
 #fotografia div:nth-child(3) img{ 
     filter: none;
 }
@@ -162,13 +166,7 @@ section {
     font-size: 25pt;
     text-align: center;
 }
-
-#fotografia a {
-    color: orangered;
-    margin: auto;
-    text-align: center;
-}
-
+  
 section:nth-child(4) {
     margin: 300px 0;
     width: 100vw;
@@ -179,7 +177,12 @@ section:nth-child(4) img{
     height: 500px;
 }
 
+#fotografia {
+    margin-bottom: 300px;
+}
+
 #proyectos{
+    margin-top:300px; 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -230,6 +233,75 @@ section:nth-child(4) img{
 }
 #fortalezas ul li:nth-child(5) {
     width: 35%;
+}
+
+#contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#contacto h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    padding: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+form input ,textarea{
+    border: 2px solid orangered;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+form input:last-child{
+    width: 20%;
+    align-self: flex-end;
+    background: #fff;
+    margin-bottom: 0;
+}
+
+#contacto ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 30px 0;
+    width: 60%;
+    margin: auto;
+}
+
+#contacto ul li {
+    padding: 0 10px;
+}
+
+#contacto ul li a img{
+    width: 50px;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span {
+    color: orangered;
 }
 
 
