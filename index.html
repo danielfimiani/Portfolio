@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <script src="sss/sss.min.js"></script>
+    <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
     <script src="js/script.js"></script>
     <title>Daniel Fimiani</title>
 </head>
@@ -28,7 +30,7 @@
                 <li><a href="#contacto" id="btn-contacto">CONTACTO</a></li> 
                 <li>
                     <a href="#" id="bt-cv">
-                        <img src="Iconos/file-rounded-outlined-symbol.svg" alt="iconocv" width="15px" height="100%">
+                        <img src="Iconos/file-rounded-outlined-symbol.svg" alt="iconocv">
                         <p>CV</p>
                     </a>
                 </li>
@@ -38,7 +40,7 @@
     <main>
         <section id="fotografia">
             <h2>Fotografia</h2>
-            <div>
+            <div> 
                 <a href="images/img6.jpg">
                     <img src="images/img6.jpg" alt="img6">
                 </a>
@@ -64,9 +66,11 @@
             </div>
         </section>
         <section id="proyectos">
-            <img src="images/web1.png" alt="imgweb1">
-            <img src="images/web3.png" alt="imgweb3">
-            <img src="images/web2.png" alt="imgweb2"> 
+            <div class="slider">
+                <img src="images/web1.png" alt="imgweb1">
+                <img src="images/web3.png" alt="imgweb3">
+                <img src="images/web2.png" alt="imgweb2"> 
+            </div>
         </section>
         <section id="fortalezas">
             <ul>
@@ -89,7 +93,7 @@
                 <input type="text" name = 'apellido' id="apellido" required>
                 <label for="email">Email:</label>
                 <input type="email" name = "email" id="email" required>
-                <label for="cometario">Comenarios:</label>
+                <label for="comentario">Comenarios:</label>
                 <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
                 <input type="submit">
             </form>

@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
     $(window).on('scroll',function() {
         if ($(window).scrollTop()) {
@@ -10,5 +12,8 @@ $(document).ready(function () {
             $('h1').removeClass('white-text');
             $('h1').css("color","black");
         }
-    });
+    });  
 });
+
+$('.slider').sss();
+
