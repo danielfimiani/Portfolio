@@ -12,95 +12,84 @@ body {
 }
 
 
-h1 span {
-    color: orangered;
-    font-weight: bold;
-}
-
-.contenedor {
-    width: 90%;
-    max-width: 980px;
+main {
     margin: auto;
-    overflow: hidden;
-    display: flex;
-}
-
-h1 {
-    color: #fff;
-    border-bottom: 3px solid orangered;
-    font-weight: normal;
-    display: block;
-    float: left;
-    margin-top:40px; 
+    z-index: 1
 }
 
 header {
+    position: absolute;
     width: 100%;
-    background: url('../images/fondo.jpg') #fff no-repeat;
+    background: url('../images/fondo.jpg') center no-repeat;
     background-size: cover;
-    background-position: center 0;
-}
-
-header .contenedor {
-    position: relative;
     height: 600px;
 }
 
-header .menu {
-    width: 100%;
-    text-align: right;
-    z-index: 1;
+header div {
+    max-width: 980px;
+    margin: auto;
 }
 
-header .menu a {
-    color: #000;
-    font-size: 20px;
-    font-weight: 300;
-    display: inline-block;
-    margin: 40px 20px;
+.contenedor :first-child{
     text-decoration: none;
-    position: relative;
 }
 
-#bt-cv {
+.contenedor :first-child h1{
+    color: #000;
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 50px;    
+    z-index: 2;
+}
+
+.sticky-nav {
+  background: rgba(0,0,0,0.8)
+}
+
+.white-text {
+    color: #fff;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+
+h1 span{
     color: orangered;
 }
 
-#bt-cv img , p {
-    display: inline-block
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
-.contenedor div {
-    position: absolute;
-    display: grid;
-    grid-template-areas: "imagen parrafo1"
-                        "imagen parrafo2" ;
-    padding-top: 150px;
-    margin: auto;
-    z-index :-index: 0;
+nav ul li{
+    padding: 0 10px;
+    height: 100%;
 }
 
-.contenedor div p {
-    width: 80%;
-    color: white;
-    font-size: 60px;
+nav ul li a:hover{
+    color: orangered;
 }
 
-.contenedor div img{
-    grid-area: imagen;
-    width: 100%;
+nav ul li:last-child a{
+    display: flex;
+    color: orangered;
 }
 
-.contenedor div p:first-child {
-    grid-area: parrafo1;
-    width: 100%;
-}
-.contenedor div p:last-child{
-    grid-area: parrafo2
-}
-
-main {
-    margin: auto;
+nav ul li a{
+    text-decoration: none;
+    color: #000;
 }
 
 section {
