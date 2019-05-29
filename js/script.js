@@ -29,6 +29,8 @@ $(document).ready(function () {
             $('h1').css("color","black");
         }
     });  
+
+    $('.swiper-container').css("overflow","visible");
 });
 
 
