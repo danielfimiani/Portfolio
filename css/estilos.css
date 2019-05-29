@@ -90,6 +90,10 @@ nav {
     margin: auto;
 }
 
+.active {
+    background: orangered;
+}
+
 h1 span{
     color: orangered;
 }
@@ -97,16 +101,17 @@ h1 span{
 nav ul {
     list-style: none;
     display: flex;
+    height: 100%;
 }
 
 nav ul li{
-    padding: 0 10px;
-    height: 100%;
+    padding: 0 10px;;
 }
 
 nav ul li a{
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 nav ul li a:hover{
