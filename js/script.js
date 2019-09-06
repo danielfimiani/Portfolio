@@ -1,22 +1,5 @@
 $(document).ready(function () {
-  //initialize swiper when document ready
-  var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
-
+  
   $(window).on('scroll', function () {
     var $top = $(this).scrollTop() + $(this).outerHeight(true)/2 ;
 
@@ -51,6 +34,23 @@ $(document).ready(function () {
   });
 
   $('.swiper-container').css("overflow", "visible");
+  //initialize swiper when document ready
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
 });
 
 
